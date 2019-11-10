@@ -1,0 +1,13 @@
+CarND-PID-Control-Project reflection
+
+I tried to do twiddling, but found it does not work well and it would require some time to implement it as the
+situation is different from the lectures. So I just did manual selections using the similar approach. First, I
+experimented with P-controller by setting the other two parameters to 0, then I converted it to a PD-controller
+by leaving only "I" set to 0. Finally, I chosen a non-zero "I", thus making it PID.
+
+I found a suitable "P" parameter at a value when the vehicle stops oscillating frequently and does not go off the track.
+I chosen "D" which I found to be a bigger value, so that the vehicle aligns to the proper path faster. Finally, I
+experimented to find "I" to better handle the systematic bias doing turns.
+
+My result parameters are P=0.3, I=0.0001 and D=10.0.
+
